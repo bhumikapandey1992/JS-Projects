@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3b3737; /* Dark background for the entire page */
+    margin: 0;
+    color: #ddd; /* Light text color for the entire page */
+    font-family: 'Roboto Mono', monospace; /* Monospace font for a tech feel */
+}
+
+.calculator-container {
+    width: 320px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the calculator horizontally */
+    background-color: #2c2c2c; /* Dark background color for the calculator */
+    padding: 20px;
+    border-radius: 15px; /* Slightly rounded corners */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4); /* Stronger box shadow for depth */
+}
+
+#display {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 32px; /* Larger font size for display */
+    text-align: right;
+    background-color: #333232; /* Darker background color for display */
+    color: #eee; /* Light text color for display */
+    border: none;
+    border-radius: 8px; /* Rounded corners for display */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Light shadow for depth */
+}
+
+.keys {
+    display: grid;
+    grid-gap: 15px; /* Adding space between the rows */
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Each row has 4 equal columns */
+    gap: 15px; /* Gap between buttons in a row */
+}
+
+button {
+    padding: 20px; /* Increased padding for larger buttons */
+    font-size: 18px; /* Slightly smaller font size for buttons */
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background-color: #333; /* Dark background color for buttons */
+    color: #ddd; /* Light text color for buttons */
+    border-radius: 12px; /* Rounded corners for buttons */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4); /* Subtle shadow for depth */
+}
+
+button:hover {
+    background-color: #6c6666; /* Darker background color on hover */
+    transform: scale(1.05); /* Slightly scale up on hover for popping effect */
+}
+
+.operator {
+    background-color: #333; /* Reddish color for operators */
+}
+
+.clear {
+    
+    color: #09c8cb;
+    background-color: #333; /* Orange color for clear button */
+}
+
+.equal {
+    color: #09c8cb;
+    background-color: #333; /* Green color for equal button */
+}
+.backspace {
+    color: #09c8cb;
+}
+.modulo {
+    color: #09c8cb;
+}
+
+.zero {
+    grid-column: span 2; /* Make the zero button wider */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #eee;
+    font-size: 32px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Enhanced text shadow for depth */
+}
+.operator {
+    background-color: #333; /* Background color for operators */
+    color: #ddd; /* Text color for operators */
+}
+
+.operator:hover {
+    background-color: #6c6666; /* Darker background color on hover */
+}
+
+/* Specific colors for each operator */
+.operator:nth-of-type(1) {
+    color: #09c8cb;
+}
+
+.operator:nth-of-type(2) {
+    color: #09c8cb;
+}
+
+.operator:nth-of-type(3) {
+    color: #09c8cb;
+}
+
+.operator:nth-of-type(4) {
+    color: #09c8cb;
+}
