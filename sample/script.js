@@ -17,6 +17,10 @@ async function convertCurrency() {
         const rate = data.rates[toCurrency];
         const convertedAmount = (amount * rate).toFixed(2);
         document.getElementById('result').innerText = `${amount} ${fromCurrency} = ${convertedAmount} ${toCurrency}`;
+        
+        // Show the result box by adding the 'visible' class
+        document.getElementById('result-box').classList.remove('hidden');
+        document.getElementById('result-box').classList.add('visible');
     } catch (error) {
         console.error('Error fetching exchange rates:', error);
         alert('Error fetching exchange rates. Please try again later.');
