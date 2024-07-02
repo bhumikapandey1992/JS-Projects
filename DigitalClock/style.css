@@ -1,6 +1,4 @@
-/* style.css */
-
-body {
+body{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,15 +8,13 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
-
-.clock {
+.clock{
     background: #1c1f26;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
-#time {
+#time{
     font-size: 48px;
     letter-spacing: 2px;
 }
