@@ -1,0 +1,120 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #2c3e50; /* dark background */
+    color: #ecf0f1; /* light text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.converter {
+    background-color: #34495e; /* darker container background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* darker shadow */
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.icon {
+    font-size: 3em;
+    color: #8e44ad; /* dark lavender */
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #ecf0f1; /* light text */
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #bdc3c7; /* lighter grey */
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #2c3e50; /* matching background */
+    color: #ecf0f1;
+    font-size: 1em;
+    box-sizing: border-box;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5); /* darker shadow */
+}
+
+.currency-selectors {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.currency-selectors .input-group {
+    width: 48%;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #7f8c8d; /* dark border */
+    border-radius: 5px;
+    background-color: #2c3e50; /* matching background */
+    color: #ecf0f1;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #2980b9; /* dark blue */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1c5985; /* darker blue */
+}
+
+#result-box {
+    margin-top: 20px; /* added space above result */
+    padding: 10px;
+    border: 1px solid #7f8c8d; /* dark border */
+    border-radius: 5px;
+    background-color: #2c3e50; /* matching background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* shadow for result */
+    display: none; /* initially hidden */
+}
+
+#result-box.hidden {
+    display: none;
+}
+
+#result-box.visible {
+    display: block;
+}
+
+#result {
+    font-size: 1.2em;
+    color: #e74c3c; /* change text color to red */
+    font-weight: bold;
+}
