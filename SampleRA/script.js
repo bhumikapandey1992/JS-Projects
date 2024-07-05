@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search');
     const searchButton = document.getElementById('searchButton');
     const apiRecipesList = document.getElementById('api-recipes');
+    
     const modal = document.getElementById('recipeModal');
     const modalImage = document.getElementById('modal-image');
     const modalTitle = document.getElementById('modal-title');
@@ -33,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
             apiRecipesList.innerHTML = '<p>There was an error fetching the recipes. Please try again later.</p>';
         }
     }
-
     function displayApiRecipes(apiRecipes) {
         apiRecipesList.innerHTML = '';
         if (apiRecipes.length === 0) {
