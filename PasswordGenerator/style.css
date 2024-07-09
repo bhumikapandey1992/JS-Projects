@@ -1,0 +1,144 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #4b0000; /* Dark burgundy background */
+    color: white; /* White text */
+}
+
+.container {
+    text-align: center;
+    background: #600000; /* Slightly lighter dark burgundy */
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    color: white; /* White text */
+    font-size: 24px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+    font-size: 14px; /* Smaller font size */
+    color: white; /* White text */
+}
+
+input[type="number"] {
+    width: 60px; /* Smaller width */
+    padding: 6px; /* Smaller padding */
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px; /* Smaller font size */
+    background-color: #4b0000; /* Dark burgundy input background */
+    color: white; /* White text */
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #e50914;
+    outline: none;
+}
+
+.generate-btn {
+    padding: 10px 20px;
+    background-color: #e50914; /* Netflix red button */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 0;
+    transition: background-color 0.3s;
+}
+
+.generate-btn:hover {
+    background-color: #b00610; /* Slightly darker Netflix red on hover */
+}
+
+.password-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-display input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #4b0000; /* Dark burgundy input background */
+    color: white; /* White text */
+    margin-right: 10px;
+    transition: border-color 0.3s;
+}
+
+.password-display input[type="text"]:focus {
+    border-color: #e50914; /* Matching Netflix red border */
+    outline: none;
+}
+
+.copy-icon {
+    font-size: 24px;
+    color: #e50914; /* Netflix red icon */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.copy-icon:hover {
+    color: #b00610; /* Darker Netflix red on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 600px) {
+    .container {
+        max-width: 500px;
+        padding: 50px 40px;
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .input-group {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    label {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    input[type="number"] {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    .password-display {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .password-display input[type="text"] {
+        width: 70%;
+        margin-right: 10px;
+    }
+}
