@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="pomodoro-timer">
+        <h1>Pomodoro Timer</h1>
+        <div class="progress-container">
+            <div class="progress-circle">
+                <svg class="progress-ring" width="200" height="200">
+                    <circle class="progress-ring__circle" stroke="tomato" stroke-width="10" fill="transparent" r="90" cx="100" cy="100"/>
+                </svg>
+                <div id="timer-display" class="timer-text">25:00</div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="start-stop-btn">Start</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
