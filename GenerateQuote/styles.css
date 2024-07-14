@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.quote-box {
+    margin: 20px;
+}
+
+#quote {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+#new-quote {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 20px 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#new-quote:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.share-buttons button {
+    background-color: transparent;
+    border: none;
+    font-size: 2em; /* Increased font size for larger icons */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.share-buttons button:hover {
+    transform: translateY(-2px);
+}
+
+#share-twitter i {
+    color: #1DA1F2;
+}
+
+#share-instagram i {
+    color: #E1306C;
+}
+
+#share-whatsapp i {
+    color: #25D366;
+}
